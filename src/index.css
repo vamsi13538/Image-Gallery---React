@@ -1,0 +1,184 @@
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--bodyBgColor) ;
+}
+
+:root{
+  --blackBorder: 1px solid black;
+  --redBorder: 1px solid red;
+  --greenBorder: 1px solid green;
+  --blueBorder: 1px solid blue;
+  --P2rem : 0.2rem 0.2rem;
+  --P4rem: 0.4rem 0.4rem;
+  --tagBgColor: green;
+  --textWhite: white;
+  --bodyBgColor: #e0e0e0;
+  --cardBgColor: #ffffff;
+}
+
+/* Card section starts here */
+.mainContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 0.4rem;
+  padding: var(--P2rem);
+  width: 80%;
+  margin: 0.1rem auto;
+  margin-bottom: 2rem;
+}
+
+.cardContainer{
+  padding: var(--P4rem);
+  width: max-content;
+  height: max-content;
+  background-color: var(--cardBgColor);
+  border-radius: 0.6rem;
+}
+
+.imageContainer{
+  width: 17.5rem;
+  height: 10.5rem;
+  border-radius: 0.8rem;
+}
+
+.imageContainer img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+}
+
+.photoBy{
+  padding: var(--P2rem);
+  font-size: 1.1rem;
+  margin: 0.4rem 0.2rem;
+  font-style: italic;
+}
+
+.imageInfoContainer{
+  display: flex;
+  justify-content: left;
+  gap: 0.1rem;
+  padding: var(--P2rem);
+}
+
+.imageInfoContainer p{
+  padding: var(--P2rem);
+  margin: 0.2rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.viewsCount, .downloadsCount, .likesCount, .commentsCount{
+  font-weight: normal;
+}
+
+.fa-eye{
+  color: steelblue;
+}
+
+.fa-heart{
+  color: red;
+}
+
+.tagsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  padding: var(--P2rem);
+  margin-top: 0.1rem;
+}
+
+.tagsContainer p{
+  border-radius: 0.6rem;
+  padding: 0.2rem 0.4rem;
+  margin: 0.2rem;
+  background-color: var(--tagBgColor);
+  color: var(--textWhite);
+  font-size: 0.8rem;
+}
+
+.loadingContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-size: 2.4rem;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Card section ends here */
+
+/* Image search section starts here */
+.searchContainer{
+  position: sticky;
+  left: 10%;
+  top: 0rem;
+  z-index: 10;
+  padding: var(--P2rem);
+  width: 80%;
+  margin: 0.1rem auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.6rem;
+  background-color: var(--bodyBgColor);
+}
+
+.inputContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleContaniner p{
+  font-size: 2rem;
+  padding: var(--P2rem);
+  margin: 0;
+  font-weight: bold;
+}
+
+.element1{
+  color: green;
+}
+
+.element2{
+  font-style: italic;
+  color: steelblue;
+  
+}
+
+.element3{
+  color: green;
+}
+
+.inputText{
+  padding: 0.6rem 0.4rem;
+  width: 80%;
+  border: none;
+  border: 1px solid silver;
+  border-radius: 0.4rem;
+  outline: none;
+}
+
+.inputText:focus{
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0rem;
+}
+
+.submitBtn{
+  padding: 0.6rem 0.6rem;
+  margin-left: 0.4rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: none;
+  color: var(--textWhite);
+  background: linear-gradient(135deg, steelblue, green);
+}
+
+.submitBtn:hover{
+  background: linear-gradient(135deg, green, steelblue);
+}
+
+/* Image search section ends here */
